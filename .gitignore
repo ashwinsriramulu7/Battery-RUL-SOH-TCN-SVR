@@ -1,5 +1,6 @@
 #LARGE DATASET EXCLUDED AS IT EXCEEDS 100 MB, CANNOT PUSH TO GITHUB DIRECTLY
 processed-data/master_datasets/discharge_master_normalized.csv
+processed-data/master_datasets/discharge_master_normalized_v2.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
