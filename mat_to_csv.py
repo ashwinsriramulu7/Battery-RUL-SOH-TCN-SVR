@@ -17,13 +17,23 @@ from datetime import datetime # to add proper formatted timestamps for records
 ##Util001 - convert matlab datevec to python datetime
 def matlab_dv_to_pyth_dt(vec):
     """
-    Convert MATLAB datevec [Y M D h m s] to Python datetime format
+    Convert a MATLAB datevec [Y M D h m s] into a Python datetime object.
+    Fractional seconds, if present, are truncated to achieve second-level resolution.
     """
-    if vec is None: #empty datevec 
+    if vec is None:
         return None
+
     try:
-        Y, M, D, h, m, s = vec 
-        return datetime(int(y), int(m), int(d), int(H), int(M), int(S))
-    except:
+        Year, Month, Day, hour, minute, second = vec
+        return datetime(
+            int(Year),
+            int(Month),
+            int(Day),
+            int(hour),
+            int(minute),
+            int(second)
+        )
+    except Exception:
         return None
+
 
