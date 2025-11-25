@@ -53,3 +53,7 @@ SVR_EPSILON = 0.1
 # Piecewise SVR segmentation thresholds in terms of SOH (or life fraction)
 # For example: SOH >= 0.9 → early, 0.7–0.9 → mid, < 0.7 → late
 SOH_SEGMENT_THRESHOLDS = (0.9, 0.7)
+
+# Rated / EOL capacity (NASA dataset: 2 Ah, EOL ~ 70%)
+RATED_CAPACITY_AH = 2.0
+EOL_CAPACITY_AH = 1.4
