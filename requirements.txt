@@ -1,3 +1,9 @@
 numpy 
 pandas 
 scipy
+
+torch 
+tqdm
+joblib
+matplotlib
+scikit-learn

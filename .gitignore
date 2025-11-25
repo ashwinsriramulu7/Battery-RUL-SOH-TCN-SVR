@@ -1,3 +1,6 @@
+#LARGE DATASET EXCLUDED AS IT EXCEEDS 100 MB, CANNOT PUSH TO GITHUB DIRECTLY
+Battery-RUL-SOH-TCN-SVR/processed-data/master_datasets/discharge_master_normalized.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
