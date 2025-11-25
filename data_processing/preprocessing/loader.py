@@ -60,10 +60,11 @@ def load_all_discharge_cycles(
                 df["discharge_current"] = None
                 df["cutoff_voltage"] = None
         else:
-            df["experiment_group"] = meta["exp_group"]
-            df["ambient_temp"] = meta["ambient"]
-            df["discharge_current"] = meta["current"]
-            df["cutoff_voltage"] = meta["cutoff"]
+            df["experiment_group"] = meta.exp_group
+            df["ambient_temp"] = meta.ambient
+            df["discharge_current"] = meta.current
+            df["cutoff_voltage"] = meta.cutoff
+
 
         frames.append(df)
 
