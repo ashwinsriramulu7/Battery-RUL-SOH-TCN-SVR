@@ -4,7 +4,7 @@ from pathlib import Path
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-MASTER_DATA_PATH = PROJECT_ROOT / "processed-data" / "master_datasets" / "discharge_master_normalized.csv"
+MASTER_DATA_PATH = PROJECT_ROOT / "processed-data" / "master_datasets" / "discharge_master_normalized_v3.csv"
 CHECKPOINT_DIR = PROJECT_ROOT / "artifacts" / "checkpoints"
 RESULTS_DIR = PROJECT_ROOT / "artifacts" / "results"
 PLOTS_DIR = PROJECT_ROOT / "artifacts" / "plots"
