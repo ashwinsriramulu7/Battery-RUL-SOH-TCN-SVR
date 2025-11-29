@@ -44,7 +44,7 @@ def build_master_discharge_dataset(
     df = load_all_discharge_cycles(discharge_dir=discharge_dir)
 
     print(f"[build_master_discharge_dataset] Loaded {len(df)} rows.")
-    df = clean_discharge_dataframe(df)
+    df = clean_discharge_dataframe(df) 
     print(f"[build_master_discharge_dataset] After cleaning: {len(df)} rows.")
 
     print("[build_master_discharge_dataset] Computing domain statistics...")

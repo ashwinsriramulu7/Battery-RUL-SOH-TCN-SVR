@@ -7,7 +7,7 @@ MASTER = Path("processed-data/master_datasets/discharge_master_normalized_v3.csv
 df = pd.read_csv(MASTER)
 
 # Replace inf with nan first
-df.replace([np.inf, -np.inf], np.nan, inplace=True)
+replace([np.inf, -np.inf], np.nan, inplace=True)
 
 # Forward fill inside each (battery_id, cycle_index)
 df = df.groupby(["battery_id", "cycle_index"]).apply(lambda g: g.ffill().bfill()).reset_index(drop=True)
